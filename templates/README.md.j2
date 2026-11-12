@@ -1,0 +1,45 @@
+# Awsome-Fable5.2-Game
+
+**AI 生成网页游戏案例索引 — 点开即玩 · 分类 · 提示词原文**
+
+收录社区里用 AI 一句话生成的可玩网页游戏。每个案例都附可验证的在线试玩链接与提示词原文，模型归属以原作者标注为准。
+
+- 🌐 瀑布流站：https://zqingdut.github.io/Awsome-Fable5.2-Game/
+- 📖 English：[README_EN.md](README_EN.md)
+- 📥 提交游戏：[Issue 表单](https://github.com/zqingdut/Awsome-Fable5.2-Game/issues/new?template=submit_case.yml)
+
+> 致敬作品与原厂无关；游戏内容与版权归各原作者所有。索引与整理以 MIT 发布。
+
+## 收录规则
+
+- 必须是**点开即玩**的网页游戏（单文件 HTML 或可直接访问的部署链接）。
+- 试玩链接入库前逐条核验（HTTP 200）。
+- Prompt 只收录原文，逐字复制，不改写、不截断、不翻译；未公开的写「未公开」。
+- 模型归属以原作者标注为准，不推测、不冒认。
+
+## 案例（共 {{ cases|length }} 款）
+
+{% for cat, cat_name in categories.items() %}
+{% set items = cases | selectattr("category", "equalto", cat) | list %}
+{% if items %}
+### {{ cat_name }}
+
+| 游戏 | 作者 | 模型 | 试玩 | 简介 |
+| --- | --- | --- | --- | --- |
+{% for c in items %}
+| {{ c.title | cell }} | {{ c.author | cell }} | {{ c.model | cell }} | [🕹️ 试玩]({{ c.play_url }}) | {{ c.summary | cell }} |
+{% endfor %}
+
+{% endif %}
+{% endfor %}
+## 提示词原文
+
+{% for c in cases %}
+### {{ c.title }}
+
+> {{ c.prompt | replace("\n", "\n> ") }}
+
+{% endfor %}
+## 数据
+
+单一数据源：[`data/cases.json`](data/cases.json)。改 cases.json 后运行 `python3 scripts/build_readme.py` 重新生成双语 README，瀑布流站自动读取同一份数据。
