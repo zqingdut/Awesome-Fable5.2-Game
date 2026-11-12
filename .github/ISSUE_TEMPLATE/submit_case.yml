@@ -1,0 +1,63 @@
+name: 🎮 提交游戏案例
+description: 推荐一款 AI 生成的可玩网页游戏入库
+title: "[submit] "
+labels: ["submit"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 游戏名
+      description: 如：QQ 飞车
+    validations:
+      required: true
+  - type: input
+    id: play_url
+    attributes:
+      label: 在线试玩链接
+      description: 点开即玩的 URL（单文件 HTML 或部署链接）
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类
+      options:
+        - racing（竞速）
+        - shooter（射击）
+        - casual（休闲）
+        - moba（MOBA 对战）
+        - rpg（角色扮演）
+        - puzzle（益智）
+        - sports（体育）
+        - sandbox（沙盒）
+        - other（其他）
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: 作者 / 来源
+      description: 原作者 handle 或来源链接
+    validations:
+      required: false
+  - type: input
+    id: model
+    attributes:
+      label: 生成模型
+      description: 以原作者标注为准；未标注请写「未标注」
+    validations:
+      required: false
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 提示词原文
+      description: 逐字复制原文；未公开请写「未公开」
+    validations:
+      required: false
+  - type: textarea
+    id: summary
+    attributes:
+      label: 一句话简介
+      description: 玩法与亮点
+    validations:
+      required: false
