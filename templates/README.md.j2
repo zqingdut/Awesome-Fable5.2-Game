@@ -1,12 +1,12 @@
-# Awsome-Fable5.2-Game
+# Awesome-Fable5.2-Game
 
 **AI 生成网页游戏案例索引 — 点开即玩 · 分类 · 提示词原文**
 
 收录社区里用 AI 一句话生成的可玩网页游戏。每个案例都附可验证的在线试玩链接与提示词原文，模型归属以原作者标注为准。
 
-- 🌐 瀑布流站：https://zqingdut.github.io/Awsome-Fable5.2-Game/
+- 🌐 瀑布流站：https://zqingdut.github.io/Awesome-Fable5.2-Game/
 - 📖 English：[README_EN.md](README_EN.md)
-- 📥 提交游戏：[Issue 表单](https://github.com/zqingdut/Awsome-Fable5.2-Game/issues/new?template=submit_case.yml)
+- 📥 提交游戏：[Issue 表单](https://github.com/zqingdut/Awesome-Fable5.2-Game/issues/new?template=submit_case.yml)
 
 > 致敬作品与原厂无关；游戏内容与版权归各原作者所有。索引与整理以 MIT 发布。
 
