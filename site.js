@@ -1,4 +1,4 @@
-// Awsome-Fable5.2-Game — waterfall front-end (bilingual zh / en).
+// Awesome-Fable5.2-Game — waterfall front-end (bilingual zh / en).
 // Data source: data/cases.json (single source of truth).
 // English content uses title_en / summary_en when present, else falls back
 // to the original fields. Layout: JS-managed flex columns — expanding a
@@ -29,7 +29,7 @@
       loading: '加载案例中…',
       empty: '没有符合条件的游戏。',
       loadFail: function (m) { return '案例数据加载失败（' + m + '），请到 GitHub 仓库查看。'; },
-      footer: '索引与整理以 MIT 发布；游戏内容与版权归各原作者所有。数据来自 <a href="https://github.com/zqingdut/Awsome-Fable5.2-Game/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>。',
+      footer: '索引与整理以 MIT 发布；游戏内容与版权归各原作者所有。数据来自 <a href="https://github.com/zqingdut/Awesome-Fable5.2-Game/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>。',
       promptFallback: '未公开'
     },
     en: {
@@ -56,7 +56,7 @@
       loading: 'Loading games…',
       empty: 'No games match.',
       loadFail: function (m) { return 'Failed to load case data (' + m + '). Please check the GitHub repo.'; },
-      footer: 'The index is MIT-licensed; games belong to their original authors. Data from <a href="https://github.com/zqingdut/Awsome-Fable5.2-Game/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>.',
+      footer: 'The index is MIT-licensed; games belong to their original authors. Data from <a href="https://github.com/zqingdut/Awesome-Fable5.2-Game/blob/main/data/cases.json" target="_blank" rel="noopener">data/cases.json</a>.',
       promptFallback: 'Not published'
     }
   };
